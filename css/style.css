@@ -390,19 +390,21 @@
 }
 
 /*-- -------------------------- -->
-<---          Services          -->
+<---         Services           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-1626 {
+  #services-2332 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
   }
-  #services-1626 .cs-container {
+  #services-2332 .cs-container {
     width: 100%;
     /* changes to 1280px at tablet */
-    max-width: 34.375em;
+    max-width: 36.5rem;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -410,163 +412,146 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #services-1626 .cs-content {
+  #services-2332 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
   }
-  #services-1626 .cs-title {
-    max-width: 20ch;
+  #services-2332 .cs-title {
+    max-width: 22ch;
   }
-  #services-1626 .cs-text {
-    max-width: 40rem;
-    position: relative;
-    z-index: 1;
-  }
-  #services-1626 .cs-text:after {
-    /* divider line */
-    content: "";
-    width: 100%;
-    height: 1px;
-    margin-top: 1.5rem;
-    background: var(--primary);
-    opacity: 1;
-    display: block;
-    position: relative;
-  }
-  #services-1626 .cs-chevron {
-    --chevronColor: var(--primary);
-    width: 3rem;
-    height: auto;
-  }
-  #services-1626 .cs-card-group {
+  #services-2332 .cs-card-group {
     width: 100%;
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    column-gap: clamp(1rem, 2.5vw, 1.25rem);
-    /* 28px - 40px */
-    row-gap: clamp(1.75rem, 2.5vw, 2.5rem);
   }
-  #services-1626 .cs-item {
+  #services-2332 .cs-item {
+    text-align: left;
     list-style: none;
     width: 100%;
-    display: flex;
+    margin: 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    /* 32px - 60px top & bottom */
+    /* 16px - 48px sides */
+    padding: clamp(2rem, 8vw, 3.75rem) clamp(1rem, 3vw, 3rem);
+    border-bottom: 1px solid #e7e7e8;
     grid-column: span 12;
-    flex-direction: column;
-    align-items: flex-start;
+    grid-row: span 1;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s;
   }
-  #services-1626 .cs-item:hover .cs-picture img {
-    opacity: .5;
-    transform: scale(1.2);
-  }
-  #services-1626 .cs-link {
+  #services-2332 .cs-link {
     text-decoration: none;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-  #services-1626 .cs-picture {
-    width: 100%;
-    height: 15rem;
-    margin-bottom: 1.5rem;
-    background-color: #000;
-    overflow: hidden;
-    display: block;
-    position: relative;
-  }
-  #services-1626 .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform .6s, opacity .3s;
-  }
-  #services-1626 .cs-h3 {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    text-align: left;
-    margin: 0 0 0.75rem 0;
-    color: var(--headerColor);
-  }
-  #services-1626 .cs-item-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: left;
-    margin: 0 0 1.5rem 0;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
     color: var(--bodyTextColor);
   }
-  #services-1626 .cs-fake-link {
-    font-size: 1rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    margin: 0;
-    margin-top: auto;
-    color: var(--primary);
-    display: inline-flex;
-    justify-content: flex-start;
+  #services-2332 .cs-flex {
+    display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
-  #services-1626 .cs-fake-link:hover .cs-icon {
-    transform: translateX(0.5rem);
-  }
-  #services-1626 .cs-icon {
-    width: 1.25rem;
+  #services-2332 .cs-icon {
+    width: 2.5rem;
     height: auto;
-    display: block;
-    transition: transform .3s;
+  }
+  #services-2332 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: bold;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+  }
+  #services-2332 .cs-item-text {
+    line-height: 1.5em;
+    max-width: 28.125rem;
+    margin: 0;
+    padding: 0;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-1626 .cs-container {
+  #services-2332 .cs-container {
     max-width: 80rem;
   }
-  #services-1626 .cs-content {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  #services-2332 .cs-card-group {
+    gap: 0;
+    border: 1px solid #e7e7e8;
   }
-  #services-1626 .cs-flex {
-    text-align: left;
-    width: 40vw;
-    max-width: 40rem;
-    flex: none;
-  }
-  #services-1626 .cs-title {
-    margin: 0;
-  }
-  #services-1626 .cs-text {
-    padding: 0.75rem 0 0.75rem 1.5rem;
-  }
-  #services-1626 .cs-text:after {
-    width: 1px;
-    height: 100%;
-    margin: 0 1.5rem 0 0;
-    order: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  #services-1626 .cs-item {
+  #services-2332 .cs-item {
+    border-right: 1px solid #e7e7e8;
     grid-column: span 4;
+    position: relative;
   }
-  #services-1626 .cs-picture {
-    /* 240px - 420px */
-    height: clamp(15rem, 33vw, 26.25rem);
+  #services-2332 .cs-item:hover{
+    background-color: var(--primary);
+  }
+
+  #services-2332 .cs-item:hover .cs-link{
+    color: white;
+  }
+
+
+  #services-2332 .cs-item:nth-of-type(5),
+  #services-2332 .cs-item:nth-of-type(8) {
+    position: relative;
+    z-index: 100;
+    /* middle-left square */
+  }
+  #services-2332 .cs-item:nth-of-type(5)::before,
+  #services-2332 .cs-item:nth-of-type(8)::before {
+    content: "";
+    width: 0.5625rem;
+    height: 0.5625rem;
+    background-color: var(--primary);
+    position: absolute;
+    top: -0.3125rem;
+    left: -0.3125rem;
+    z-index: 99;
+  }
+  #services-2332 .cs-item:nth-of-type(5)::after,
+  #services-2332 .cs-item:nth-of-type(8)::after {
+    content: "";
+    width: 0.5625rem;
+    height: 0.5625rem;
+    background-color: var(--primary);
+    position: absolute;
+    top: -0.3125em;
+    right: -0.3125rem;
+    z-index: 99;
+  }
+  #services-2332 .cs-item:nth-of-type(3),
+  #services-2332 .cs-item:nth-of-type(6) {
+    border-right: none;
+  }
+  #services-2332 .cs-item:nth-of-type(4),
+  #services-2332 .cs-item:nth-of-type(5),
+  #services-2332 .cs-item:nth-of-type(6) {
+    border-bottom: none;
+  }
+  #services-2332 .cs-item:nth-of-type(7),
+  #services-2332 .cs-item:nth-of-type(8),
+  #services-2332 .cs-item:nth-of-type(9) {
+    border-top: 1px solid #e7e7e8;
+    border-bottom: none;
+  }
+  #services-2332 .cs-item:nth-of-type(9) {
+    border-right: none;
   }
 }
+                                
 
 /*-- -------------------------- -->
 <---            CTA             -->
