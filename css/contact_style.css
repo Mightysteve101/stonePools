@@ -193,6 +193,8 @@
         /* prevents padding from adding to the width */
         box-sizing: border-box;
         transition: color 0.3s;
+        overflow: hidden;
+        border-radius: 0.5rem;
     }
     #contact-717 .cs-button-solid:before {
         content: "";
@@ -204,7 +206,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        border-radius: 0.25rem;
+        border-radius: 0.5rem;
         transition: width 0.3s;
     }
     #contact-717 .cs-button-solid:hover {
@@ -215,7 +217,7 @@
     }
     #contact-717 .cs-submit {
         min-width: 17.6875rem;
-        border-radius: 0;
+        border-radius: 0.5rem;
     }
 }
 /* Small Desktop - 1024px */
