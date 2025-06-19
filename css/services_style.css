@@ -139,7 +139,7 @@
         min-width: 9.375rem;
         padding: 0 1.5rem;
         background-color: var(--primary);
-        border-radius: 0.25rem;
+        border-radius: 0.5rem;
         overflow: hidden;
         display: inline-block;
         position: relative;
