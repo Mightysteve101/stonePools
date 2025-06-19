@@ -515,21 +515,9 @@ html {
         color: var(--bodyTextColorWhite);
         position: relative;
     }
-    #cs-footer-106 .cs-link:hover:before {
+    #cs-footer-106 .cs-link:hover{
         width: 100%;
-    }
-    #cs-footer-106 .cs-link:before {
-        /* top right box */
-        content: "";
-        width: 0%;
-        height: 0.1875rem;
-        background: var(--bodyTextColorWhite);
-        opacity: 1;
-        position: absolute;
-        display: block;
-        bottom: -0.125rem;
-        left: 0;
-        transition: width 0.3s;
+        color: grey;
     }
     #cs-footer-106 .cs-bottom {
         margin-top: 1.25rem;
