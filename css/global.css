@@ -377,7 +377,7 @@ html {
     #cs-navigation .cs-logo {
         width: 18.4%;
         max-width: 21.875rem;
-        height: 2rem;
+        height: 4rem;
         /* margin-right auto pushes everything away from it to the right */
         margin: 0 auto 0 0;
         padding: 0;
