@@ -503,9 +503,13 @@ html {
         text-align: center;
         margin-bottom: 1.25rem;
     }
-    #cs-footer-106 .cs-li:last-of-type {
-        margin-bottom: 0;
+
+    #cs-footer-106 .cs-li .cs-footer-contact {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 1.25rem;
     }
+
     #cs-footer-106 .cs-link {
         /* 15px - 17px */
         font-size: clamp(0.9375rem, 2vw, 1.0625rem);
@@ -561,10 +565,13 @@ html {
         /* 45px - 88px */
         margin: 0 clamp(2.8125rem, 7vw, 5.5rem) 0 0;
     }
-    #cs-footer-106 .cs-li:last-of-type {
+    #cs-footer-106 .cs-footer-contact{
         margin: 0;
         /* margin-left auto will push everything away and force it to the farthest 
                    right edge */
         margin-left: auto;
     }
-}       
+
+    #cs-footer-106 .cs-li:last-of-type{
+        margin-left: clamp(2.8125rem, 7vw, 5.5rem);
+    }       
