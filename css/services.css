@@ -75,7 +75,6 @@
     }
 }
 
-
 /*-- -------------------------- -->
 <---        Side By Side        -->
 <--- -------------------------- -*/
@@ -139,7 +138,7 @@
         min-width: 9.375rem;
         padding: 0 1.5rem;
         background-color: var(--primary);
-        border-radius: 0.5rem;
+        border-radius: 0.25rem;
         overflow: hidden;
         display: inline-block;
         position: relative;
@@ -210,7 +209,7 @@
         width: 100%;
         height: 50%;
         background-color: #1a1a1a;
-        display: block;
+        display: none;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -295,6 +294,7 @@
     }
     #RPsbs-1280 .cs-background,
     #RPsbsr-1280 .cs-background {
+        display: block;
         width: 60vw;
         height: 100%;
         /* 172px - 336px */
@@ -325,8 +325,4 @@
     }
 }
 
-                                
-                            
-
-                                
                                 
