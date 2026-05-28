@@ -17,10 +17,6 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -99,7 +95,8 @@ body,
 html {
     /* reset margin and padding so there's no gap between the nav and the screen edges */
     margin: 0;
-       padding: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Mobile - 1023px */
@@ -577,4 +574,5 @@ html {
 
     #cs-footer-106 .cs-li:last-of-type{
         margin-left: clamp(2.8125rem, 7vw, 5.5rem);
-    }       
+    }  
+}     
